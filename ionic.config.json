@@ -1,0 +1,7 @@
+{
+  "name": "where-is-my-money",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

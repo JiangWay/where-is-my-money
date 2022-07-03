@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "where-is-my-money",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
