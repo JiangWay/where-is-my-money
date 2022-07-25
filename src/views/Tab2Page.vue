@@ -2,28 +2,86 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 2</ion-title>
+        <ion-title>Header</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 2</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      
-      <ExploreContainer name="Tab 2 page" />
+
+    <ion-content>
+      <!-- fab placed to the top end -->
+      <ion-fab vertical="top" horizontal="start" slot="fixed">
+        <ion-fab-button>
+          <ion-icon :icon="add"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list>
+          <ion-fab-button color="light">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button color="light">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button color="light">
+            <ion-icon name="logo-vimeo"></ion-icon>
+          </ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
     </ion-content>
+
   </ion-page>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import {
+  IonContent,
+  IonFab,
+  IonFabButton,
+  IonFabList,
+  IonHeader,
+  IonIcon,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/vue";
+import {
+  add,
+  arrowBackCircle,
+  arrowForwardCircle,
+  arrowUpCircle,
+  logoFacebook,
+  logoInstagram,
+  logoTwitter,
+  logoVimeo,
+  person,
+  settings,
+  share,
+} from "ionicons/icons";
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'Tab2Page',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: {
+    IonContent,
+    IonFab,
+    IonFabButton,
+    IonFabList,
+    IonHeader,
+    IonIcon,
+    IonPage,
+    IonTitle,
+    IonToolbar,
+  },
+  setup() {
+    return {
+      add,
+      arrowBackCircle,
+      arrowForwardCircle,
+      arrowUpCircle,
+      logoFacebook,
+      logoInstagram,
+      logoTwitter,
+      logoVimeo,
+      person,
+      settings,
+      share,
+    };
+  },
 });
 </script>
