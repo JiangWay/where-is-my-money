@@ -19,7 +19,7 @@ export interface IMember{
     memberId: string;
     email: string;
     account:string;
-    teamList:ITeam[];
+    teamList?:ITeam[];
 }
 
 export interface IBill {

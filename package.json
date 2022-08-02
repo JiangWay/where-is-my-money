@@ -16,11 +16,15 @@
     "@capacitor/ios": "3.5.1",
     "@capacitor/keyboard": "1.2.3",
     "@capacitor/status-bar": "1.0.8",
+    "@capacitor/storage": "^1.2.5",
     "@ionic/vue": "^6.0.0",
     "@ionic/vue-router": "^6.0.0",
+    "chart.js": "^3.8.2",
     "core-js": "^3.6.5",
     "date-fns": "^2.29.1",
+    "v-calendar": "^3.0.0-alpha.8",
     "vue": "^3.2.21",
+    "vue-chartjs": "^4.1.1",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
